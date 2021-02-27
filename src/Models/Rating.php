@@ -43,7 +43,7 @@ class Rating extends Model
     {
         $rating = new static();
         $rating->fill(array_merge($data, [
-            'author_id' => $author->id,
+            'author_id' => $author->user_id,
             'author_type' => get_class($author),
         ]));
 
